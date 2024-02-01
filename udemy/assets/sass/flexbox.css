@@ -5,19 +5,13 @@
 
 .flex-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: yellow;
-    height: 500px;
 }
 
 .flex-itens {
-    /* width: 100%; */
+    width: 100%;
+    height: 500px;
+    color: white;
     background: red;
-    margin: 10px
-}
-
-.flex-itens:nth-child(3) {
-    font-size: 40px;
+    margin: 10px;
 }
