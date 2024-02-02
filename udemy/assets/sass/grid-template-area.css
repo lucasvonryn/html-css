@@ -16,14 +16,14 @@ body {
 .grid {
     display: grid;
     grid-template-rows: 50px 1fr 50px;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 100px 1fr 100px;
     grid-template-areas:
-        'header header'
-        'nav main'
-        'footer footer';
+        'header header header'
+        'nav main aside'
+        'nav footer footer';
 }
 
-.grid div:nth-child(1) {
+.grid .header {
     grid-area: header;
     background: black;
     color: white;
@@ -32,30 +32,35 @@ body {
     align-items: center;
 }
 
-.grid div:nth-child(1) h1 {
+.grid .header h1 {
     padding: 10px;
 }
 
-.grid div:nth-child(1) nav {
+.grid .header nav {
     padding: 10px;
 }
 
-.grid div:nth-child(2) {
+.grid .nav {
     grid-area: nav;
     background: darkred;
 }
 
-.grid div:nth-child(2) ul{
+.grid .nav ul{
     list-style: none;
 }
 
-.grid div:nth-child(3) {
+.grid .main {
     grid-area: main;
     height: 100vh;
     background: darkolivegreen;
 }
 
-.grid div:nth-child(4) {
+.grid .aside {
+    grid-area: aside;
+    background: darkgoldenrod;
+}
+
+.grid .footer {
     grid-area: footer;
     background: darkcyan;
 }
